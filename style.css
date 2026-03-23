@@ -1,0 +1,102 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT COLOR */
+:root {
+  --blue: #1673ff;
+}
+
+/* BODY */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+}
+
+/* FLEX LAYOUT */
+.main-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo img {
+  height: 40px;
+}
+
+/* MENU BACKGROUND */
+.menu {
+  background: #fff;
+}
+
+/* NAV LIST */
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+/* ITEMS (без gap!) */
+.nav__item {
+  margin-right: 28px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+/* LINKS (КЛЮЧОВЕ) */
+.nav__link {
+  display: inline-block;
+  height: 56px;
+  line-height: 56px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+
+  font-weight: 500;
+}
+
+/* HOVER */
+.nav__link:hover {
+  color: var(--blue);
+}
+
+/* ACTIVE LINK */
+.nav__link.is-active {
+  color: var(--blue);
+  position: relative;
+}
+
+/* NO ACTIVE LINK */
+.nav__link.is-no-active {
+  color: var(--blue);
+  position: relative;
+}
+
+/* UNDERLINE */
+.nav__link.is-active::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -8px;
+
+  height: 4px;
+  background: var(--blue);
+}
