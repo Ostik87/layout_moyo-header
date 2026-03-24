@@ -1,5 +1,14 @@
 {
-  "test": "backstop test --config=backstop.config.js",
-  "test:reference": "backstop reference --config=backstop.config.js",
-  "test:update": "backstop approve --config=backstop.config.js"
+  "name": "moyo-header",
+  "version": "1.0.0",
+  "description": "Layout project for Moyo header",
+  "private": true,
+  "devDependencies": {
+    "backstopjs": "^6.3.25"
+  },
+  "scripts": {
+    "test": "backstop test --config=backstop.config.js",
+    "test:reference": "backstop reference --config=backstop.config.js",
+    "test:update": "backstop approve --config=backstop.config.js"
+  }
 }
