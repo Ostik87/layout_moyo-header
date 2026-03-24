@@ -1,25 +1,5 @@
 {
-  "name": "moyo-header",
-  "version": "1.0.0",
-  "description": "MOYO header layout with BackstopJS tests",
-  "main": "index.js",
-  "scripts": {
-    "start": "serve .",
-    "test": "backstop test",
-    "test:reference": "backstop reference",
-    "test:update": "backstop approve",
-    "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@mate-academy/backstop-config": "^1.0.0",
-    "backstopjs": "^6.3.23",
-    "prettier": "^3.0.0",
-    "serve": "^14.2.0"
-  },
-  "mateAcademy": {
-    "projectType": "layout"
-  }
+  "test": "backstop test --config=backstop.config.js",
+  "test:reference": "backstop reference --config=backstop.config.js",
+  "test:update": "backstop approve --config=backstop.config.js"
 }
