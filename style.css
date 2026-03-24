@@ -70,21 +70,20 @@ body {
   text-transform: uppercase;
   color: #222;
   font-weight: 500;
-  position: relative;
   font-size: 14px;
+  position: relative;
 }
 
 /* HOVER */
-.nav__link:hover {
-  color: var(--blue);
-}
-
-/* ACTIVE LINK */
+.nav__link:hover,
 .nav__link.is-active {
   color: var(--blue);
 }
 
+
+
 /* UNDERLINE FOR ACTIVE LINK */
+.nav__link:hover::after,
 .nav__link.is-active::after {
   content: "";
   position: absolute;
