@@ -71,6 +71,7 @@ body {
   color: #222;
   font-weight: 500;
   position: relative;
+  font-size: 14px;
 }
 
 /* HOVER */
@@ -89,7 +90,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -8px;
+  bottom: 0px;
   height: 4px;
   background: var(--blue);
 }
