@@ -1,11 +1,12 @@
 'use strict';
 
-const { basicScenario } = require('@mate-academy/backstop-config');
-
-const basic = {
-  ...basicScenario,
-  label: 'Elementary test',
-  referenceUrl: basicScenario.referenceUrl + '/moyo-header/',
+const basicScenario = {
+  url: 'http://localhost:3000', // або шлях до твоєї локальної сторінки
+  delay: 0,
+  selectors: ['body'],
+  selectorExpansion: true,
+  misMatchThreshold: 0.1,
+  requireSameDimensions: true,
 };
 
 module.exports = {
@@ -17,10 +18,18 @@ module.exports = {
   onBeforeScript: 'puppet/onBefore.js',
   onReadyScript: 'puppet/onReady.js',
   scenarios: [
-    { ...basic, label: 'Header tag', selectors: ['header'] },
-    { ...basic, label: 'Nav tag', selectors: ['nav'] },
     {
-      ...basic,
+      ...basicScenario,
+      label: 'Header tag',
+      selectors: ['header'],
+    },
+    {
+      ...basicScenario,
+      label: 'Nav tag',
+      selectors: ['nav'],
+    },
+    {
+      ...basicScenario,
       label: 'Link with data-qa_hover',
       selectors: ['[data-qa="hover"]'],
       hoverSelector: '[data-qa="hover"]',
@@ -28,7 +37,7 @@ module.exports = {
       misMatchThreshold: 2,
     },
     {
-      ...basic,
+      ...basicScenario,
       label: 'Link with class_is-active',
       selectors: ['a.is-active'],
       misMatchThreshold: 2,
