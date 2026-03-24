@@ -8,7 +8,6 @@
     "test": "backstop test",
     "test:reference": "backstop reference",
     "test:update": "backstop approve",
-    "lint": "mate-scripts lint",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'"
   },
   "keywords": [],
@@ -17,7 +16,6 @@
   "devDependencies": {
     "@mate-academy/backstop-config": "^1.0.0",
     "backstopjs": "^6.3.23",
-    "mate-scripts": "^1.0.0",
     "prettier": "^3.0.0",
     "serve": "^14.2.0"
   },
