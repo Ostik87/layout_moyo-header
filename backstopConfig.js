@@ -40,7 +40,6 @@ const config = {
     },
     {
       ...basic,
-      misMatchThreshold: 2,
       label: 'Link with data-qa_hover',
       selectors: ['[data-qa="hover"]'],
       hoverSelector: '[data-qa="hover"]',
@@ -48,7 +47,6 @@ const config = {
     },
     {
       ...basic,
-      misMatchThreshold: 2,
       label: 'Link with class_is-active',
       selectors: ['a.is-active'],
     },
